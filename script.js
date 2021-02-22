@@ -9,7 +9,7 @@ function checker () {
   // The condition below checks if they are a student or not
   if (((date === 'saturday') || (date === 'sunday')) && (age <= 17)) {
     document.getElementById('result').innerHTML = 'It is not a weekday, No school!'
-  } else if (((date != 'saturday') || (date != 'sunday')) && (age <= 17)) {
+  } else if (((date !== 'saturday') || (date !== 'sunday')) && (age <= 17)) {
     document.getElementById('result').innerHTML = 'It is a weekday, time for school!'
   } else if (((date === 'saturday') || (date === 'sunday')) && (age >= 18)) {
     document.getElementById('result').innerHTML = 'It is not a weekday, Time to relax!'
